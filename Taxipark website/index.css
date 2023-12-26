@@ -1,0 +1,1131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* h1 {
+    font-family: 'Dancing Script', cursive;
+} */
+
+/* navbar css start */
+
+.navbar {
+    background-color: rgb(126, 123, 123, 0.5);
+    /* backdrop-filter: ; */
+    color: white;
+    font-weight: 700;
+    border-bottom: 7px solid #ffba00;
+}
+
+
+.navbar-brand {
+    padding-left: 50px;
+}
+
+.navbar-nav {
+    padding-left: 0;
+}
+
+.dropdown-menu .dropdown-item {
+    padding: 10px;
+    margin-top: 5px;
+    font-weight: 700;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    /* color: #ffba00; */
+    background-color: #ffba00;
+}
+
+/* navbar css end */
+
+/* ----------------------------------------Slider Carousel----------------------------------------------- */
+.carousel .carousel-inner .carousel-item>img {
+    height: 100vh;
+    width: 100%;
+}
+
+.carousel-item>img {
+    -webkit-animation: thing 20s;
+    -o-animation: thing 20s;
+    animation: thing 20s;
+}
+
+@keyframes thing {
+    from {
+        transform: scale(1, 1);
+    }
+
+    to {
+        transform: scale(1.5, 1.5);
+    }
+}
+
+.bannerSlider {
+    /* border: 5px solid red; */
+    height: 737px;
+    position: relative;
+}
+
+.card-form {
+    background-color: #f5f5f5;
+    position: relative;
+    width: 90%;
+    padding: 50px;
+    max-width: 500px;
+    margin: 40px auto;
+    /* border: 2px solid black; */
+    border-radius: 5px;
+}
+
+.card-heading {
+    font-size: 25px;
+    font-weight: 650;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.card-heading span {
+    color: #ffc61a;
+    font-size: 25px;
+    font-weight: 650;
+
+}
+
+.card-images {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.card-images img {
+    border-radius: 5px;
+    width: 85px;
+    height: 45px;
+    margin: 0 10px;
+    border: 2px solid black;
+}
+
+.form-img:hover {
+    background-color: #ffba00;
+    color: #ffba00;
+}
+
+
+.form {
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+.form input {
+    padding: 12px 10px;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 5px;
+}
+
+.first-row,
+.seconed-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.get-taxi-btn {
+    width: 40%;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 50px;
+    background-color: #ffc61a;
+    border: none;
+    text-align: center;
+    /* Align text to center */
+    margin: 0 auto;
+    /* Center the button */
+    display: block;
+    /* Ensure it takes the full width available */
+}
+
+.get-taxi-btn:hover {
+    background-color: #000000;
+    color: #ffba00;
+}
+
+@media (max-width: 575.98px) {
+    /* Target mobile screens */
+    /* Your existing media queries... */
+
+    .get-taxi-btn {
+        width: 100%;
+        /* Make button width 100% for mobile */
+    }
+}
+
+@media (max-width: 575.98px) {
+
+    /* Target mobile screens */
+    .form-container {
+        position: static;
+        top: auto;
+        left: auto;
+        margin-top: 20px;
+        /* Adjust margin-top for better alignment */
+    }
+
+    .first-row,
+    .seconed-row {
+        display: flex;
+        flex-direction: column;
+        /* Set form rows to column layout */
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+
+    .card-form {
+        width: 90%;
+        /* Adjust card width for better visibility */
+    }
+
+    .get-taxi-btn {
+        width: 100%;
+        /* Make button width 100% for mobile */
+    }
+}
+
+
+@media (min-width: 576px) {
+    .card-form {
+        width: 70%;
+    }
+}
+
+@media (min-width: 768px) {
+    .card-form {
+        width: 60%;
+    }
+}
+
+@media (min-width: 992px) {
+    .card-form {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .card-form {
+        width: 40%;
+    }
+}
+
+.form-container {
+    position: absolute;
+    top: 150px;
+    left: 150px;
+}
+
+@media (max-width: 575.98px) {
+
+    /* Target mobile screens */
+    .form-container {
+        position: static;
+        /* Change to static or any position that fits within the bannerSlider */
+        top: auto;
+        left: auto;
+        margin-top: 20px;
+        /* Adjust margin-top for better alignment */
+        padding: 20px;
+        /* Add padding for better spacing */
+    }
+
+    .card-form {
+        width: 90%;
+        /* Adjust card width for better visibility */
+        margin: 20px auto;
+        /* Center the card on mobile screens */
+    }
+
+    .first-row,
+    .seconed-row {
+        display: flex;
+        flex-direction: column;
+        /* Set form rows to column layout */
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+
+    .form input {
+        width: 100%;
+        /* Make input fields full width on mobile */
+    }
+
+    .get-taxi-btn {
+        width: 100%;
+        /* Make button width 100% for mobile */
+    }
+}
+
+@media (max-width: 575.98px) {
+
+    /* Target mobile screens */
+    .card-images {
+        display: flex;
+        flex-wrap: wrap;
+        /* Allow images to wrap on smaller screens */
+        justify-content: center;
+        /* Center the images */
+        margin-top: 10px;
+        /* margin-bottom: auto; */
+        gap: 10px;
+        /* Add gap between images */
+        margin-bottom: 20px;
+        /* Adjust bottom margin */
+    }
+
+    .card-images img {
+        width: 100px;
+        /* Adjust image width for better visibility */
+        height: auto;
+        /* Maintain aspect ratio */
+        border-radius: 5px;
+        /* Apply border radius */
+    }
+}
+
+/* Your existing CSS styles... */
+
+.bannerSlider {
+    /* Your existing styles... */
+    position: relative;
+    /* Add position relative to set as the reference for child elements */
+}
+
+.form-container {
+    position: absolute;
+    top: 50%;
+    /* Position from top */
+    left: 25%;
+    /* Position from left */
+    transform: translate(-50%, -50%);
+    /* Center horizontally and vertically */
+    width: 90%;
+    /* Adjust the width as needed */
+    max-width: 500px;
+    /* Maximum width for responsiveness */
+    margin: 0 auto;
+    /* Center the container horizontally */
+    padding: 50px;
+    /* Adjust padding as needed */
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
+
+/* Adjust card heading, form, and other styles as needed */
+
+@media (max-width: 575.98px) {
+    /* Target mobile screens */
+
+    .form-container {
+        width: 90%;
+        height: auto;
+        /* Adjust card width for better visibility */
+        padding: 20px;
+        /* Add padding for better spacing */
+        position: absolute;
+        top: 50%;
+        /* Position from top */
+        left: 50%;
+        /* Position from left */
+    }
+}
+@media (min-width: 574px) and (max-width: 768px) {
+.form-container {
+width: auto;
+/* Adjust card width for better visibility */
+padding: 20px;
+/* Add padding for better spacing */
+position: absolute;
+top: 50%;
+/* Position from top */
+left: 50%;
+/* Position from left */
+transform: translate(-50%, -50%);
+/* Center horizontally and vertically */
+}
+}
+@media (min-width: 774px) and (max-width: 1050px) {
+.form-container {
+width: auto;
+/* Adjust card width for better visibility */
+padding: 20px;
+/* Add padding for better spacing */
+position: absolute;
+top: 50%;
+/* Position from top */
+left: 50%;
+/* Position from left */
+transform: translate(-50%, -50%);
+/* Center horizontally and vertically */
+}
+}
+
+/* slider carousel end */
+
+/* <!-- our partner and contact section START--> */
+
+.custom-container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #ffba00;
+    padding: 20px;
+}
+
+/* Make images responsive */
+.col-6 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Center text content for small screens */
+@media (max-width: 776px) {
+    .col-12.col-md-4 {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .row-partner-client {
+        margin-top: 20px;
+    }
+}
+
+.fa-solid-icon {
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* For mobile screens */
+@media (max-width: 575.98px) {
+    .fa-solid-icon {
+        height: 30px;
+        width: 30px;
+        /* Adjust other styles as needed for mobile screens */
+    }
+}
+
+/* For tablet screens */
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .fa-solid-icon {
+        height: 35px;
+        width: 35px;
+        /* Adjust other styles as needed for tablet screens */
+    }
+}
+
+/* For laptop screens */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .fa-solid-icon {
+        height: 40px;
+        width: 40px;
+        /* Adjust other styles as needed for laptop screens */
+    }
+}
+
+/* For larger screens (desktop) */
+@media (min-width: 1200px) {
+    .fa-solid-icon {
+        height: 45px;
+        width: 45px;
+        /* Adjust other styles as needed for larger screens */
+    }
+}
+
+.our-tariffs {
+    background-color: #ffba00;
+    color: #000000;
+    border-radius: 50px;
+    height: 40px;
+    /* Decreased height */
+    width: 120px;
+    /* Decreased width */
+    font-weight: 600;
+    font-size: 14px;
+    /* Decreased font size */
+    border: 2px solid black;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.our-tariffs:hover {
+    background-color: #000000;
+    color: #ffba00;
+    border: 2px solid #000000;
+    border-radius: 50px;
+}
+
+@media (max-width: 575.98px) {
+    .our-tariffs {
+        width: 100px;
+        height: 35px;
+        font-size: 12px;
+    }
+}
+
+/* Media query for tablets */
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .our-tariffs {
+        width: 120px;
+        height: 40px;
+        font-size: 14px;
+    }
+}
+
+/* Media query for laptops */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .our-tariffs {
+        width: 150px;
+        height: 45px;
+        font-size: 16px;
+    }
+}
+
+/* Media query for desktops */
+@media (min-width: 1200px) {
+    .our-tariffs {
+        width: 180px;
+        height: 50px;
+        font-size: 18px;
+    }
+}
+
+/* For icon and p tag alignment */
+.col-6 i,
+.col-6 p {
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 10px;
+    font-size: 15px;
+    /* Set font size for the <p> tag */
+    font-weight: 700;
+}
+
+/* <!-- our partner and contact section end --> */
+
+/* our tariffs code start */
+/* Common styles for cards */
+.card {
+    min-height: 55vh;
+    transition: box-shadow 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s;
+}
+
+.card-img-top {
+    height: auto;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+}
+
+
+.container-parant {
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.display-6 {
+    font-weight: 500;
+}
+
+/* CSS for triangle */
+.triangle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 50px solid #ffba00;
+    /* Adjust triangle size */
+    border-left: 50px solid transparent;
+    z-index: 1;
+}
+
+/* CSS for card styling */
+.card.card-third {
+    border: 2px solid #ffba00 !important;
+    border-radius: 5px;
+    position: relative;
+}
+
+.card-third .card-body {
+    position: relative;
+    z-index: 2;
+}
+
+/* Media query for small screens */
+@media (max-width: 767px) {
+    .triangle {
+        display: block;
+    }
+}
+
+/* our tariffs code end */
+
+/* mobile app css start */
+#app {
+    height: 90vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url(Images/download-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.apphead {
+    text-align: center;
+    /* border: 1px solid violet; */
+    margin-top: 50px;
+
+}
+
+.appcontent {
+    width: 100%;
+    height: 70%;
+    flex: 4 3 3;
+    /* border: 1px solid red; */
+
+}
+
+.appc {
+    /* border: 1px solid white; */
+    /* flex: 4; */
+    margin: 0 10px;
+}
+
+.appcc {
+    flex: 4;
+}
+
+.appmbl {
+    /* flex: 3; */
+    background-image: url(Images/mobile.png);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    gap: 30px;
+    padding-bottom: 20px;
+    /* border: 1px solid white; */
+
+}
+
+.appic {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-items: flex-end;
+}
+
+.num {
+
+    flex: 1;
+    /* border: 1px solid red; */
+    align-self: flex-start;
+}
+
+.appc1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    justify-items: flex-start;
+}
+
+.appdata {
+    flex: 4;
+}
+
+.num h2 {
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.appc2 {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    gap: 10px;
+
+
+}
+
+.num h2 {
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.appdata1 {
+    flex: 4;
+    /* border: 1px solid rebeccapurple; */
+}
+
+@media only screen and (max-width: 1093px) {
+    .appcontent {
+        width: 80%;
+        height: 70%;
+        flex: 4 3 4;
+        /* border: 1px solid red; */
+
+    }
+
+    .num {
+        display: none;
+    }
+
+    .appdata {
+        text-align: center;
+    }
+
+    .appdata1 {
+        text-align: center;
+    }
+
+    .appmbl {
+        /* flex: 1; */
+        /* border: 1px solid white; */
+        background-image: none;
+        height: 50%;
+
+        align-items: center;
+        justify-content: space-around;
+        gap: 0px;
+        padding-bottom: 0px;
+    }
+
+    .appic {
+        /* border: 1px solid red; */
+        height: 400px;
+        background-color: rgb(255, 208, 0);
+        width: 70%;
+        padding: 20px 20px;
+        justify-content: space-around;
+
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    #app {
+        height: 130vh;
+
+    }
+
+    .appcontent {
+        width: 90%;
+    }
+
+    .appic {
+        height: 100px;
+        width: 70%;
+        padding: 20px 20px;
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #app {
+        height: 180vh;
+        justify-content: space-evenly;
+        gap: 0;
+
+    }
+
+    .appic {
+        height: 200px;
+        width: 40%;
+        padding: 20px 20px;
+    }
+
+    .apphead {
+        /* border: 1px solid red; */
+        margin-top: 0px;
+
+    }
+
+    .appcontent {
+        width: 80%;
+        height: 600px;
+
+        /* border: 1px solid red; */
+
+    }
+
+    .appc {
+        /* border: 1px solid white; */
+        /* flex: 4; */
+        height: 200px;
+        margin: 0 0px;
+        padding: 0;
+
+    }
+
+    .appcc {
+        height: auto;
+    }
+
+}
+
+/* mobile app css end */
+
+/* become a driver code start */
+/* Custom CSS if needed */
+.drive {
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.tick {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.tick h5 {
+    margin: 0;
+    padding: 10px;
+}
+
+.check-icon {
+    display: inline-block;
+    width: 30px;
+    /* Adjust width as needed */
+}
+
+.become-driver {
+    background-color: #ffba00;
+    color: #000000;
+    border: 1px solid #ffba00;
+    border-radius: 50px;
+    height: 50px;
+    width: 220px;
+    margin-top: 20px;
+    margin-left: 30px;
+    font-weight: 600;
+    font-size: large;
+}
+
+.become-driver:hover {
+    background-color: #000000;
+    color: #ffba00;
+}
+
+@media (max-width: 768px) {
+    .tick {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .become-driver {
+        width: 100%;
+        max-width: 220px;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+}
+
+/* become a driver code end */
+
+
+
+/* -------------------------------------testimonial css code Start------------------------------------------------- */
+.testimonial-wrapper {
+    height: 250px;
+    width: 100%;
+    border: 1px solid #ccc;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.carousel-item.hide {
+    display: none;
+}
+
+.one {
+    height: 15px;
+    width: 100vw;
+    background-image: repeating-conic-gradient(white 0deg, white 90deg, black 91deg, black 180deg);
+    background-size: 1% 100%;
+}
+
+
+.col .testimonial-wrapper>p>span {
+    position: relative;
+    bottom: 100px;
+}
+
+.col .testimonial-wrapper>img {
+    height: 8vh;
+    width: 8vh;
+    border-radius: 50px;
+    position: relative;
+    bottom: 120px;
+}
+
+
+.one {
+    height: 15px;
+    width: 100vw;
+
+    background-image: repeating-conic-gradient(white 0deg, white 90deg, black 91deg, black 180deg);
+    background-size: 1% 100%;
+}
+/* Existing styles... */
+
+/* Media query for centering the carousel */
+@media (max-width: 768px) {
+    .testimonial-center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carousel-inner {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        top: auto;
+        bottom: 20px;
+        transform: translateY(0);
+    }
+}
+/* Your existing CSS styles... */
+
+/* Centering testimonial carousel */
+.testimonial-center {
+    text-align: center;
+}
+
+.container-fluid.testimonial-center {
+    position: relative;
+}
+
+.container-fluid.testimonial-center .one {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/* Media query for screens between 574px and 768px */
+@media (min-width: 574px) and (max-width: 768px) {
+    .testimonial-center .container {
+        width: 100%;
+        margin-left: 25%; /* Adjust margin-left as needed for centering */
+    }
+
+    .carousel-inner {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        top: auto;
+        bottom: 20px;
+        transform: translateY(0);
+    }
+
+    .testimonial-center .row.no-margin-cols .col-md-6 {
+        width: auto; /* Adjust column width */
+        margin: 0 10px; /* Adjust margin between columns */
+    }
+}
+
+/* Media query for screens smaller than 574px (extra small devices) */
+@media (max-width: 573px) {
+    .testimonial-center .row.no-margin-cols .col-md-6 {
+        width: 100%; /* Make columns full width on extra small screens */
+        margin: 0; /* Remove margin between columns */
+        margin-bottom: 15px; /* Add margin between rows */
+    }
+}
+/* Media query for screens between 574px and 768px */
+@media (min-width: 574px) and (max-width: 768px) {
+    .testimonial-center .container {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .carousel-inner {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        top: auto;
+        bottom: 20px;
+        transform: translateY(0);
+    }
+
+    .testimonial-center .row.no-margin-cols .col-md-6 {
+        width: auto; /* Adjust column width */
+        margin: 0 10px; /* Adjust margin between columns */
+    }
+}
+
+
+
+
+/* -------------------------------------testimonial css code end------------------------------------------------- */
+
+/* <!-- our partners code start --> */
+
+.custom-container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #ffba00;
+    padding: 20px;
+}
+
+/* Make images responsive */
+.col-6 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Center text content for small screens */
+@media (max-width: 776px) {
+    .col-12.col-md-4 {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .row-partner-client {
+        margin-top: 20px;
+    }
+}
+
+/* <!-- our partners code end --> */
+
+
+/* css code for footer explore section start */
+.menu-footer-menu-ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.menu-footer-menu-li:hover {
+    color: #ffba00;
+}
+
+.menu-footer-menu-li {
+    padding-bottom: 10px;
+    /* Adjust spacing as needed */
+    margin-bottom: 5px;
+    /* Add margin between li items */
+    border-bottom: 1px dotted gray;
+    /* Dotted bottom border */
+    cursor: pointer;
+}
+
+.heading-color {
+    color: #ffba00;
+}
+
+#block-footer {
+    background-color: #2e2e2e;
+    color: #CCCCCC;
+    padding: 30px 0;
+    font-size: 14px;
+}
+
+footer {
+    background-color: #0c0c0c;
+    text-align: left;
+    padding: 37px 0 27px;
+    overflow: hidden;
+}
+
+/* css code for footer explore section end */
+
+
+/* bottom Footer Block start */
+footer {
+    background-color: #494949;
+    text-align: left;
+    padding: 37px 0 27px;
+    overflow: hidden;
+}
+
+.footer-text {
+    text-decoration: none;
+    color: #ffba00;
+}
+
+.footer-text:hover {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* bottom Footer Block end */
